@@ -16,9 +16,9 @@ function CardList({ cardContent }) {
     */
   return (
     <section className="card-list">
-      {cardContent.map((content, index) => (
+      {cardContent.map((content /*index*/) => (
         <Card
-          key={index}
+          key={content.id} // Changed from index
           title={content.title}
           content={content.content}
           // 3.4 Active Card - add ID
