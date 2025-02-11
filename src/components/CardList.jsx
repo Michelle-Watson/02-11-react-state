@@ -1,5 +1,6 @@
 import Card from "./Card";
 
+// 1.3 Modify the CardList component to use the array from props rather than the one stored locally.
 function CardList({ cardContent }) {
   /*
     let cardContent = [
