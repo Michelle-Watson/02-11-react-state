@@ -60,13 +60,23 @@ function App() {
   // 3.1 In the App component, create a new state variable called activeCard and set it to null for the moment. We'll use this to store the id of the active card.
   const [activeCard, setActiveCard] = useState(null);
 
+  // 3.5 Create a function called changeActiveCard that we'll use to modify the activeCard state which will subsequently update the styles of the card which was most recently clicked. Have your function accept one parameter, the card's id, and use this to set the state value activeCard to this id.
+  const changeActiveCard = (id) => {
+    setActiveCard(id);
+  };
+
   return (
     <>
       <Header logo="BrainStation" />
       {/* 2.2 Pass the addCard function to the CardForm component using props. */}
       <CardForm addCard={addCard} />
       {/* 1.2 Pass the array stored in the cardContent state variable to the CardList component using props. */}
-      <CardList cardContent={cardContent} />
+      <CardList
+        cardContent={cardContent}
+        // 3.6 Pass the activeCard value from state and changeActiveCard function to the CardList component as props.
+        activeCard={activeCard}
+        changeActiveCard={changeActiveCard}
+      />
     </>
   );
 }
