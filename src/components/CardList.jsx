@@ -17,7 +17,13 @@ function CardList({ cardContent }) {
   return (
     <section className="card-list">
       {cardContent.map((content, index) => (
-        <Card key={index} title={content.title} content={content.content} />
+        <Card
+          key={index}
+          title={content.title}
+          content={content.content}
+          // 3.4 Active Card - add ID
+          id={content.id}
+        />
       ))}
     </section>
   );
