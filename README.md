@@ -1,8 +1,55 @@
 # Lab: React State
 
+## Overview
+
+This project was completed as part of a **React State** lab, focused on managing state and building interactive React components. Key concepts include handling state, updating state via user input, and conditionally styling elements.
+
+**Technologies Used**:  
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+[![uuid](https://img.shields.io/badge/uuid-v8.3.2-orange?style=flat)](https://www.npmjs.com/package/uuid)
+
+## Key Learnings 📚
+
+- **State Management**: Used `useState` to store card data and pass it between components using props.
+- **Adding New Cards**: Implemented forms for dynamically adding cards to state without direct mutation.
+- **Active Card State**: Managed active card tracking using unique `id` (via `uuid`) and conditional styling.
+- **Props & Functions**: Passed functions and state between parent (`App`) and child components (`Card`, `CardList`).
+- **DDAU**: Data Down 🔢⬇️, Actions Up 🎬⬆️
+  - Data flows down: Data flows from parent to child components through props. This means that a parent component can pass data to a child component, but the child cannot directly modify the data from the parent. Instead, the child can receive the data and display or use it.
+  - Events flow up: Events flow from child to parent components. This means that when something happens in a child component (like a button click), the event can trigger a function in the parent component. The parent can then update the state or perform some action based on the event from the child.
+
+## Purpose 🎯
+
+As a **Teaching Assistant (TA)** at **BrainStation**, I’m sharing this project as a learning resource for students. It demonstrates core React concepts such as state management, event handling, and conditional rendering.
+
+## Get in Touch 🫱🏾‍🫲🏾
+
+<p align="left">
+<a href="https://www.linkedin.com/in/michelleawatson" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn: linkedin.com/in/michelleawatson" />
+</a>
+<a href="mailto:michellealiciawatson@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email: michellealiciawatson@gmail.com" />
+</a>
+<a href="https://discord.com/users/234360551742898176">
+  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord: michelle_5026" />
+</a>
+  <a href="https://steamcommunity.com/id/maybuns/">
+  <img src="https://img.shields.io/badge/Steam-181717?style=for-the-badge&logo=steam&logoColor=white" alt="Steam: maybuns" />
+</a>
+  </a>
+  <a href="https://myanimelist.net/profile/xmaybunnyx">
+  <img src="https://img.shields.io/badge/MyAnimeList-2E51A2?style=for-the-badge&logo=MyAnimeList&logoColor=white" alt="MyAnimeList: xmaybunnyx" />
+</a>
+</p>
+
 ## Getting Started
 
-This lab builds upon the previous one. You may use your own completed lab or [get a fresh start with the starter code](./lab-react-state-starter.zip).
+[Get a fresh start with the starter code](./lab-react-state-starter.zip).
 
 ## Storing Data in State
 
