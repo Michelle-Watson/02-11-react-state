@@ -1,6 +1,7 @@
-import Card from './Card';
+import Card from "./Card";
 
-function CardList() {
+function CardList({ cardContent }) {
+  /*
     let cardContent = [
         {
             title: 'First Card',
@@ -11,18 +12,14 @@ function CardList() {
             content: 'Second card content'
         }
     ];
-    
-    return (
-        <section className="card-list">
-            {cardContent.map((content, index) => (
-                <Card 
-                    key={index} 
-                    title={content.title} 
-                    content={content.content}
-                />
-            ))}
-        </section>
-    );
+    */
+  return (
+    <section className="card-list">
+      {cardContent.map((content, index) => (
+        <Card key={index} title={content.title} content={content.content} />
+      ))}
+    </section>
+  );
 }
 
 export default CardList;
